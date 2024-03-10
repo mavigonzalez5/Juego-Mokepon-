@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@700&family=Poppins:wght@300&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #3F0071;
+}
+
+#seleccionar-mascota {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo {
+    color: white;
+    font-size: 50px;
+    font-family: 'Fredoka', sans-serif;
+}
+
+.subtitulo {
+    color: white
+
+}
+
+.tarjetas, .tarjetas-ataques {
+    display: flex;
+}
+
+.tarjeta-de-mokepon {
+    width: 180px;
+    height: 100px;
+    background: #FB2576;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    border-radius: 20px;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+#boton-mascota {
+    width: 180px;
+    height: 50px;
+    border-radius: 30px;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 15px;
+}
+
+
+.tarjeta-de-mokepon img {
+    width: 80px;
+}
+input {
+    display: none;
+}
+
+input:checked + label {
+    background: #A31ACB;
+}
+
+#seleccionar-ataque {
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton-de-ataque {
+    background: #332FD0;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    border-radius: 20px;
+    border-color: transparent;
+    width: 100px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+#mensajes {
+    width: 280px;
+    background: #FB2576;
+    padding:20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#boton-reiniciar {
+    border: none;
+    color: #332FD0;
+    font-family: 'Fredoka', sans-serif;
+    background: transparent;
+    
+}
+
+.ataques {
+    display: grid;
+    grid-template-columns: 200px 200px;
+    justify-items: center;
+}
+
+.ataques-jugador, .ataques-enemigo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #332FD0;
+    padding:20px;
+    margin-top: 20px;
+    border-radius: 20px;
+
+}
+
+#mascota-jugador, #mascota-enemigo {
+    font-family: 'Fredoka', sans-serif;
+
+}
+
+#ver-mapa {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#ver-mapa button {
+    width: 80px;
+    height: 40px;
+    border-radius: 20px;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    margin: 10px 0px;
+}
+
+
+@media (max-width: 560px ) {
+    .tarjetas, .tarjetas-ataques {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 300px ) {
+    #ver-mapa div {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+    }
+}
